@@ -19,6 +19,7 @@ router.get('/search', async (req, res) => {
                 { location: { $regex: searchQuery, $options: 'i' } } // Search for location containing the query
             ]
         }).toArray();
+        
 
         // Return the search results
         res.json(searchResults);

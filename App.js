@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const lessonsRouter = require('./routes/lessonsAPI');
 const ordersRouter = require('./routes/orderAPI');
+const searchRouter = require('./routes/searchAPI')
 const { connectToDatabase } = require('./db'); // Import the connectToDatabase function
 
 const app = express();
@@ -41,6 +42,7 @@ connectToDatabase()
         // Routes
         app.use('/api', lessonsRouter);
         app.use('/api', ordersRouter);
+        app.use('/api',searchRouter);
 
         // Error Handling Middleware 
         app.use((err, req, res, next) => {
