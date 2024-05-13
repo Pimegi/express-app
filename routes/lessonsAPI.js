@@ -33,7 +33,7 @@ router.put('/lessons/update-spaces', async (req, res) => {
         { $set: { spaces: spaces[index] } },
         { returnDocument: 'after' }
       );
-      return result.value;
+      return result;
       
     }));
 
