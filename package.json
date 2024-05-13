@@ -2,12 +2,14 @@
     "name": "cw2",
     "private": true,
     "script": {
-        "start": "node app.js"
+        "start": "node App.js"
     },
     "dependencies": {
         "cors": "^2.8.5",
         "express": "^4.19.2",
         "mongodb": "^6.6.1",
-        "mongoose": "^8.3.4"
+        "mongoose": "^8.3.4",
+        "morgan": "^1.10.0",
+        "properties-reader": "^2.3.0"
     }
 }

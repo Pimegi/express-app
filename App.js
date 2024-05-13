@@ -1,10 +1,10 @@
 const express = require('express');
+const { connectToDatabase } = require('./db'); // Import the connectToDatabase function
+const morgan = require('morgan');
 const path = require('path');
 const lessonsRouter = require('./routes/lessonsAPI');
 const ordersRouter = require('./routes/orderAPI');
 const searchRouter = require('./routes/searchAPI')
-const { connectToDatabase } = require('./db'); // Import the connectToDatabase function
-
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -25,12 +25,8 @@ connectToDatabase()
 
         app.use(cors(corsOptions))
 
-        // Logger Middleware
-        const logger = (req, res, next) => {
-            console.log(`${req.method} ${req.url} - ${new Date()}`);
-            next();
-        };
-        app.use(logger);
+        // Logger Middleware - Morgan
+        app.use(morgan('common'));
 
         // Middleware to parse JSON bodies
         app.use(express.json());
