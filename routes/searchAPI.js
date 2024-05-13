@@ -7,19 +7,20 @@ const router = express.Router();
 router.get('/search', async (req, res) => {
     try {
         // Extract the search query from the request query parameters
-        const searchQuery = req.query.q;
+        const searchQuery = req.query.query;
 
         // Get the database instance
         const db = getDb();
 
-        // Perform the search query on the lessons collection
+        // const searchQueryStr = String(searchQuery);
+        
         const searchResults = await db.collection('lessons').find({
             $or: [
                 { subject: { $regex: searchQuery, $options: 'i' } }, // Search for subject containing the query
                 { location: { $regex: searchQuery, $options: 'i' } } // Search for location containing the query
             ]
         }).toArray();
-        
+
 
         // Return the search results
         res.json(searchResults);

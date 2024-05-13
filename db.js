@@ -24,7 +24,6 @@ function getDb() {
 }
 
 module.exports = {
-    client,
     connectToDatabase,
     getDb
 };

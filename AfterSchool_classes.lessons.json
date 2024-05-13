@@ -3,7 +3,7 @@
   "subject": "Tennis",
   "location": "Texas",
   "price": 20,
-  "spaces": 6,
+  "spaces": 9,
   "icon": "http://localhost:3000/images/tennis.png",
   "quantity": 0
 },
@@ -12,7 +12,7 @@
   "subject": "Basketball",
   "location": "Florida",
   "price": 25,
-  "spaces": 9,
+  "spaces": 15,
   "icon": "http://localhost:3000/images/basketball.png",
   "quantity": 0
 },
