@@ -4,7 +4,7 @@
   "location": "Texas",
   "price": 20,
   "spaces": 9,
-  "icon": "http://vueapp-env-1.eba-rz3pbgpi.eu-west-2.elasticbeanstalk.com/images/tennis.png",
+  "icon": "https://express-app-6h4c.onrender.com/images/tennis.png",
   "quantity": 0
 },
 {
@@ -13,7 +13,7 @@
   "location": "Florida",
   "price": 25,
   "spaces": 15,
-  "icon": "http://vueapp-env-1.eba-rz3pbgpi.eu-west-2.elasticbeanstalk.com/images/basketball.png",
+  "icon": "https://express-app-6h4c.onrender.com/images/basketball.png",
   "quantity": 0
 },
 {
@@ -22,7 +22,7 @@
   "location": "Ohio",
   "price": 30,
   "spaces": 7,
-  "icon": "http://vueapp-env-1.eba-rz3pbgpi.eu-west-2.elasticbeanstalk.com/images/volleyball.png",
+  "icon": "https://express-app-6h4c.onrender.com/images/volleyball.png",
   "quantity": 0
 },
 {
@@ -31,7 +31,7 @@
   "location": "Alaska",
   "price": 150,
   "spaces": 8,
-  "icon": "http://vueapp-env-1.eba-rz3pbgpi.eu-west-2.elasticbeanstalk.com/images/football.png",
+  "icon": "https://express-app-6h4c.onrender.com/images/football.png",
   "quantity": 0
 },
 {
@@ -40,7 +40,7 @@
   "location": "New Jersey",
   "price": 45,
   "spaces": 11,
-  "icon": "http://vueapp-env-1.eba-rz3pbgpi.eu-west-2.elasticbeanstalk.com/images/squash.png",
+  "icon": "https://express-app-6h4c.onrender.com/images/squash.png",
   "quantity": 0
 },
 {
@@ -49,7 +49,7 @@
   "location": "New York",
   "price": 25,
   "spaces": 15,
-  "icon": "http://vueapp-env-1.eba-rz3pbgpi.eu-west-2.elasticbeanstalk.com/images/swimming.png",
+  "icon": "https://express-app-6h4c.onrender.com/images/swimming.png",
   "quantity": 0
 },
 {
@@ -58,7 +58,7 @@
   "location": "Arizona",
   "price": 45,
   "spaces": 6,
-  "icon": "http://vueapp-env-1.eba-rz3pbgpi.eu-west-2.elasticbeanstalk.com/images/piano.png",
+  "icon": "https://express-app-6h4c.onrender.com/images/piano.png",
   "quantity": 0
 },
 {
@@ -67,7 +67,7 @@
   "location": "Alabama",
   "price": 75,
   "spaces": 13,
-  "icon": "http://vueapp-env-1.eba-rz3pbgpi.eu-west-2.elasticbeanstalk.com/images/golf.png",
+  "icon": "https://express-app-6h4c.onrender.com/images/golf.png",
   "quantity": 0
 },
 {
@@ -76,7 +76,7 @@
   "location": "Missouri",
   "price": 47,
   "spaces": 22,
-  "icon": "http://vueapp-env-1.eba-rz3pbgpi.eu-west-2.elasticbeanstalk.com/images/hockey.png",
+  "icon": "https://express-app-6h4c.onrender.com/images/hockey.png",
   "quantity": 0
 },
 {
@@ -85,6 +85,6 @@
   "location": "Connecticut",
   "price": 21,
   "spaces": 19,
-  "icon": "http://vueapp-env-1.eba-rz3pbgpi.eu-west-2.elasticbeanstalk.com/images/tabletennis.png",
+  "icon": "https://express-app-6h4c.onrender.com/images/tabletennis.png",
   "quantity": 0
 }]
