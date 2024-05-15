@@ -1,7 +1,7 @@
 {
     "name": "cw2",
     "private": true,
-    "script": {
+    "scripts": {
         "start": "node App.js"
     },
     "dependencies": {
