@@ -1,6 +1,6 @@
 //Import dependencies modules:
 const express = require('express')
-//const bodyParser = require('body-parser')
+const path = require('path');
 
 //Create an Express.js instance:
 const app = express()
@@ -24,6 +24,17 @@ let db;
 MongoClient.connect("mongodb+srv://pimegi:<password>@cluster0.a07grzv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", (err, client) => {
     db = client.db('Webstore')
 })
+
+// Logger Middleware - Morgan
+app.use(morgan('common'));
+
+// Middleware to parse JSON bodies
+app.use(express.json());
+
+// Static File Middleware
+const lessonImagesDirectory = path.join(__dirname, 'images');
+app.use('/images', express.static(lessonImagesDirectory));
+
 
 //display a message for root path to show tha API is working
 app.get('/', (req, res, next) => {
