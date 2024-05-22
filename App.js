@@ -21,8 +21,8 @@ app.use ((req,res,next) => {
 const MongoClient = require('mongodb').MongoClient;
 
 let db;
-MongoClient.connect("mongodb+srv://pimegi:<password>@cluster0.a07grzv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", (err, client) => {
-    db = client.db('Webstore')
+MongoClient.connect('mongodb+srv://pimegi:admin@cluster0.a07grzv.mongodb.net/AfterSchool_classes?retryWrites=true&w=majority', (err, client) => {
+    db = client.db('AfterSchool_classes')
 })
 
 // Logger Middleware - Morgan
