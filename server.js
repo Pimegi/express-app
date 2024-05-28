@@ -42,6 +42,11 @@ MongoClient.connect(
 const lessonImagesDirectory = path.join(__dirname, 'images');
 app.use('/images', express.static(lessonImagesDirectory));
 
+// Handle image not found
+app.use('/images', (req, res, next) => {
+  res.status(404).send('Image not found');
+});
+
 //display a message for root path to show tha API is working
 app.get("/", (req, res, next) => {
   res.send("Select a collection, e.g., /collection/messages");
